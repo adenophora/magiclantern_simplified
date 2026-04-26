@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'modules/pixshift/**'
+  workflow_dispatch:
 
 jobs:
   build:
