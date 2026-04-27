@@ -24,6 +24,9 @@ jobs:
           cd modules/pixshift
           make ML_PATH=../../
 
+      - name: Rename module
+        run: mv modules/pixshift/build/.mo modules/pixshift/build/pixshift.mo
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
